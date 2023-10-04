@@ -1,19 +1,30 @@
 package edu.miu.cs489;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import edu.miu.cs489.model.Employee;
+import edu.miu.cs489.model.PensionPlan;
+
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        var employees = new Employee[]{
+                new Employee(333,"Daniel","Agar",LocalDate.of(2018,01,17),105945.50),
+                new Employee(444,"Benard","Shaw",LocalDate.of(2018,10,03),19750.00),
+                new Employee(444,"Carly","Agar",LocalDate.of(2014,05,16),842000.75),
+                new Employee(444,"Wesley","Schneider",LocalDate.of(2018,11,02),74500.00),
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+
+        };
+        var pensionPlansensionPlan = new PensionPlan[]{
+                new PensionPlan("EX1089",LocalDate.of(2023,01,17),100.00),
+                new PensionPlan("",LocalDate.of(2023,01,17),100.00),
+                new PensionPlan("SM2307",LocalDate.of(2023,01,17),100.00),
+                new PensionPlan("",LocalDate.of(2023,01,17),100.00),
+
+
+
+        };
+
     }
 }
