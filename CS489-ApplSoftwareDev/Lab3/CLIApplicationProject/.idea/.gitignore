@@ -1,0 +1,8 @@
+# Default ignored files
+/../../CLIApplicationProject./.idea/shelf/
+/../../CLIApplicationProject./.idea/workspace.xml
+# Editor-based HTTP Client requests
+/../../CLIApplicationProject./.idea/httpRequests/
+# Datasource local storage ignored files
+/../../CLIApplicationProject./.idea/dataSources/
+/../../CLIApplicationProject./.idea/dataSources.local.xml
