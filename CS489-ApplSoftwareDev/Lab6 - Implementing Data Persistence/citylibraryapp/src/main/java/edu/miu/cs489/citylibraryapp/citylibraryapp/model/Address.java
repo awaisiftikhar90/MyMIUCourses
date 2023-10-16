@@ -12,13 +12,18 @@ import lombok.NoArgsConstructor;
 public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer addressId;
+    @Column(name = "id", nullable = false)
+    private Long id;
+
     private String street;
     private String city;
-    private String state;
-    private String zipCode;
-    //Bi directional onetoone assosication
-    @OneToOne
-    private Patient patient;
+    @Column(length = 16)
+    private String zipcode;
+
+    public Address(String street, String city, String zipcode){
+        this.street = street;
+        this.city = city;
+        this.zipcode = zipcode;
+    }
 
 }
