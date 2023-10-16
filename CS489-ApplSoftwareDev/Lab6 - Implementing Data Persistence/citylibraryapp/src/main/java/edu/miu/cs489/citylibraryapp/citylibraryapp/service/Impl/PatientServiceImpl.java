@@ -15,11 +15,11 @@ public class PatientServiceImpl  implements PatientService {
     }
     @Override
     public void addPatient(Patient patient) {
-
+        patientRepo.save(patient);
     }
 
     @Override
     public Patient findByEmail(String email) {
-        return null;
+        return patientRepo.findByEmail(Long.valueOf(email)).orElse(new Patient());
     }
 }
