@@ -1,4 +1,3 @@
-package com.example;
 
 import com.example.Service.AppointmentService;
 import com.example.Service.DentistService;
