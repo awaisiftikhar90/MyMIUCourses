@@ -27,7 +27,7 @@ class PatientServiceImplTest {
 
     @Test
     public void testFindPatientByIdValid() throws PatientNotFound {
-        PatientResponse testPatient = new PatientResponse(1l, "Alice", "Brown", "alice.brown@example.com", "4th ST", new AddressResponse("Townsville", "456 Elm St", "54321"));
+        PatientResponse testPatient = new PatientResponse(1l, "Alia", "Kreat", "alia.kreat@example.com", "4th ST", new AddressResponse("Townsville", "5060 Lhk str", "54321"));
         PatientResponse foundPatient = patientService.findById(1L);
         assertEquals(testPatient, foundPatient);
     }

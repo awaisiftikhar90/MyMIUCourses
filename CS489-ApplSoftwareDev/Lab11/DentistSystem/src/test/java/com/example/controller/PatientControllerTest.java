@@ -30,8 +30,8 @@ class PatientControllerTest {
     public void testFindPatients() {
 
         List<PatientResponse> expectedPatients = new ArrayList<>();
-        expectedPatients.add(new PatientResponse(1l, "Alice", "Brown", "alice.brown@example.com", "4th ST", new AddressResponse("Townsville", "456 Elm St", "54321")));
-        expectedPatients.add(new PatientResponse(2l, "Pooja", "Kumari", "pooja.kumari@example.com", "1000 N 4th ST", new AddressResponse("Fairfiled", "4 St", "52557")));
+        expectedPatients.add(new PatientResponse(1l, "Sophrya", "Ait", "alice.brown@example.com", "4th ST", new AddressResponse("Townsville", "2060 Elm St", "20556")));
+        expectedPatients.add(new PatientResponse(2l, "Awais", "Iftikhar", "aiftikhar@example.com", "1000 N 4th ST", new AddressResponse("Fairfiled", "4 St", "52557")));
 
         when(patientService.getPatients()).thenReturn(expectedPatients);
 
