@@ -1,5 +1,6 @@
 package com.example.asdfinalprojecteshop.model;
 
+import jakarta.persistence.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
